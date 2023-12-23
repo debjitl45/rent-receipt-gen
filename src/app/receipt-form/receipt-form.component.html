@@ -1,0 +1,35 @@
+<div class="form-container">
+    <h2 class="form-heading">EZRentify</h2>
+    <form [formGroup]="receiptForm">
+  
+      <div class="form-group">
+        <label class="label" for="tenantName">Tenant Name:</label>
+        <input class="input-field" type="text" formControlName="tenantName" id="tenantName" placeholder="Tenant Name">
+      </div>
+  
+      <div class="form-group">
+        <label class="label" for="landlordName">Landlord Name:</label>
+        <input class="input-field" type="text" formControlName="landlordName" id="landlordName" placeholder="Landlord Name">
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="address">Address:</label>
+        <input class="input-field" type="text" formControlName="address" id="address" placeholder="Address">
+      </div>
+  
+      <div class="form-group">
+        <label class="label" for="amount">Amount:</label>
+        <input class="input-field" type="number" formControlName="amount" id="amount" placeholder="Amount">
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="date">Date:</label>
+        <input class="input-field" type="date" formControlName="date" id="date">
+      </div>
+  
+      <!-- Add more form controls as needed -->
+  
+      <button class="generate-pdf-button" (click)="generatePDF()">Generate PDF</button>
+  
+    </form>
+  </div>
